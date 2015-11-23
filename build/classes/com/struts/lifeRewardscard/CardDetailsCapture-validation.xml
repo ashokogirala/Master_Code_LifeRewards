@@ -1,0 +1,17 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="lifewardsCard">
+		<field-validator type="requiredstring">
+			<message>Card number is required</message>
+		</field-validator>
+	</field>
+	<field name="lifewardsCard">
+		<field-validator type="stringlength">
+			<param name="minLength">16</param>
+			<param name="maxLength">16</param>
+			<message>card number must be of length 16</message>
+		</field-validator>
+	</field>
+	
+</validators>

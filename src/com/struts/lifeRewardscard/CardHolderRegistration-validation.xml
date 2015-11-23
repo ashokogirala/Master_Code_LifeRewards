@@ -1,0 +1,67 @@
+<!DOCTYPE validators PUBLIC "-//OpenSymphony Group//XWork Validator 1.0.2//EN"
+ "http://struts.apache.org/dtds/xwork-validator-1.0.2.dtd">
+<validators>
+	<field name="custIdNum">
+		<field-validator type="requiredstring">
+			<message>Customer ID is required.</message>
+		</field-validator>
+	</field>	
+    <field name="passport">
+		<field-validator type="requiredstring">
+			<message>Passport Number is required.</message>
+		</field-validator>
+	</field>
+	<field name="firstName">
+		<field-validator type="requiredstring">
+			<message>Please Enter First Name.</message>
+		</field-validator>
+	</field>	
+	<field name="lastName">
+		<field-validator type="requiredstring">
+			<message>Please Enter Last Name.</message>
+		</field-validator>
+	</field>
+	<field name="gender">
+    <field-validator type="required">
+        
+        <message>*</message>
+    </field-validator>
+</field>
+	<field name="officeNo">
+		<field-validator type="requiredstring">
+			<message>Please Enter Office number.</message>
+		</field-validator>
+	</field>
+	<field name="officeNo">
+		<field-validator type="stringlength">
+			<param name="maxLength">14</param>
+			<message>phone number should not exceed 8 digits</message>
+		</field-validator>
+	</field>
+	<field name="officeNo">
+		<field-validator type="stringlength">
+			<param name="minLength">7</param>
+			<message>Please Enter Office number.</message>
+		</field-validator>
+	</field>
+	 <field name="mobileNo">
+		<field-validator type="requiredstring">
+			<message>Please Enter personal mobile number</message>
+		</field-validator>
+	</field>
+	<field name="postalId">
+		<field-validator type="requiredstring">
+			<message>Please Enter Postal code</message>
+		</field-validator>
+	</field>
+	<field name="city">
+		<field-validator type="requiredstring">
+			<message>Please Enter City</message>
+		</field-validator>
+	</field>
+	<field name="state">
+		<field-validator type="requiredstring">
+			<message>Please Enter address</message>
+		</field-validator>
+	</field>
+</validators>
